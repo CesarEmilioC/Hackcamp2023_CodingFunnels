@@ -1,0 +1,201 @@
+:root {
+    --dark-green: #10463c;
+    --green-transparent: #10463ccf;
+    --med-green: #47736a;
+    --orange: #eec181;
+    --green: #637a5e;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background: url(../images/map-background.png) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--green);
+    background-color: var(--dark-green);
+    border-radius: 1.5rem;
+    margin: 0 auto;
+    min-height: 40vh;
+    padding: 2rem 0.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--orange);
+    padding-bottom: 1rem;
+}
+
+label {
+    font-family: "Roboto Serif", serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    width: 100%;
+    display: block;
+    color: var(--med-green);
+    margin-left: 1rem;
+}
+
+input {
+    width: 80%;
+    border: none;
+    padding: 0.25rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: var(--med-green);
+    border-radius: 0.33rem;
+    margin: 0.15rem 1rem 0.5rem;
+    transition: 0.2s ease;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    background-color: var(--green);
+}
+
+input[type="submit"] {
+    background-color: var(--orange);
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    padding: 0.25rem 2rem;
+    text-align: center;
+    max-width: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--white);
+}
+
+footer {
+    background-color: var(--green-transparent);
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+footer p {
+    padding: 2rem;
+    margin: 0 auto;
+    text-shadow: 1px 1px 1px var(--black);
+}
+
+.register-account {
+    color: var(--white);
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 2rem 1rem 1rem;
+    font-family: "Roboto Serif", serif;
+    font-size: 0.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.register-account:hover {
+    color: var(--orange);
+}
+
+.logged-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--green);
+    background-color: var(--dark-green);
+    border-radius: 1.5rem;
+    margin: 0 auto;
+    min-height: 40vh;
+    padding: 2rem;
+    width: 60vw;
+}
+
+.logged-in a {
+    display: block;
+    padding: 0.5rem 2rem;
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 0.25rem;
+    background-color: var(--orange);
+    color: var(--dark-green);
+    text-decoration: none;
+    width: min(20rem, 40vw);
+    transition: 0.2s ease-in-out;
+}
+
+.logged-in a:hover {
+    background-color: var(--white);
+}
+
+@media (min-width: 50em) {
+    .form-container {
+        width: 60vw;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 40vw;
+        padding: 0.5rem;
+    }
+
+    input[type="submit"] {
+        max-width: 15rem;
+        padding: 0.5rem;
+    }
+}
