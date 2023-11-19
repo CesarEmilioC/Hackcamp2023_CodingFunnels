@@ -25,7 +25,7 @@
 
             <div class="form-container">
 
-                <form action="user-loggedin.html" method="post" name="login-form">
+                <form action="/" method="post" name="login-form">
                     <fieldset class="login">
                         <legend>Lost on Board</legend>
                         <label for="username">Username</label>
@@ -35,7 +35,7 @@
                     </fieldset>
                     <input type="submit" class="submit" value="Login">
                 </form>
-
+                <p>{{ error_message }}</p>
                 <a href="register-account.html" id="register-account" class="register-account">Don't have an account?
                     Click here!</a>
 

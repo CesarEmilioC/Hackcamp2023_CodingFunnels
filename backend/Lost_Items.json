@@ -1,0 +1,177 @@
+{
+    "00001": {
+        "Type": "Laptop",
+        "Brand": "Dell",
+        "Model": "XPS 13",
+        "Color": "Silver",
+        "Bus": "R2"
+    },
+    "00002": {
+        "Type": "Smartwatch",
+        "Brand": "Samsung",
+        "Model": "Galaxy Watch 4",
+        "Color": "Black",
+        "Bus": "R1"
+    },
+    "00003": {
+        "Type": "Tablet",
+        "Brand": "Apple",
+        "Model": "iPad Pro",
+        "Color": "Space Gray",
+        "Bus": "84"
+    },
+    "00004": {
+        "Type": "Headphones",
+        "Brand": "Sony",
+        "Model": "WH-1000XM4",
+        "Color": "Black",
+        "Bus": "Canada Line"
+    },
+    "00005": {
+        "Type": "Digital Camera",
+        "Brand": "Canon",
+        "Model": "EOS R5",
+        "Color": "Black",
+        "Bus": "Expo Line"
+    },
+    "00006": {
+        "Type": "Gaming Console",
+        "Brand": "Microsoft",
+        "Model": "Xbox Series X",
+        "Color": "Black",
+        "Bus": "99"
+    },
+    "00007": {
+        "Type": "Fitness Tracker",
+        "Brand": "Fitbit",
+        "Model": "Charge 5",
+        "Color": "Blue",
+        "Bus": "R4"
+    },
+    "00008": {
+        "Type": "E-reader",
+        "Brand": "Amazon",
+        "Model": "Kindle Oasis",
+        "Color": "Graphite",
+        "Bus": "262"
+    },
+    "00009": {
+        "Type": "Smartphone",
+        "Brand": "Samsung",
+        "Model": "Galaxy S21",
+        "Color": "Phantom Gray",
+        "Bus": "R1"
+    },
+    "00010": {
+        "Type": "Desktop Computer",
+        "Brand": "HP",
+        "Model": "Pavilion",
+        "Color": "Silver",
+        "Bus": "49"
+    },
+    "00011": {
+        "Type": "Smart Home Speaker",
+        "Brand": "Google",
+        "Model": "Nest Audio",
+        "Color": "Chalk",
+        "Bus": "Canada Line"
+    },
+    "00012": {
+        "Type": "Wireless Router",
+        "Brand": "Netgear",
+        "Model": "Nighthawk AX12",
+        "Color": "Black",
+        "Bus": "Expo Line"
+    },
+    "00013": {
+        "Type": "External Hard Drive",
+        "Brand": "Seagate",
+        "Model": "Backup Plus",
+        "Color": "Red",
+        "Bus": "R2"
+    },
+    "00014": {
+        "Type": "Bluetooth Speaker",
+        "Brand": "JBL",
+        "Model": "Charge 4",
+        "Color": "Teal",
+        "Bus": "84"
+    },
+    "00015": {
+        "Type": "Wireless Mouse",
+        "Brand": "Logitech",
+        "Model": "MX Master 3",
+        "Color": "Midnight Teal",
+        "Bus": "Canada Line"
+    },
+    "00016": {
+        "Type": "Action Camera",
+        "Brand": "GoPro",
+        "Model": "Hero 10 Black",
+        "Color": "White",
+        "Bus": "99"
+    },
+    "00017": {
+        "Type": "Compact Refrigerator",
+        "Brand": "Whirlpool",
+        "Model": "Mini Fridge",
+        "Color": "Stainless Steel",
+        "Bus": "R4"
+    },
+    "00018": {
+        "Type": "Graphic Tablet",
+        "Brand": "Wacom",
+        "Model": "Intuos Pro",
+        "Color": "Black",
+        "Bus": "R1"
+    },
+    "00019": {
+        "Type": "Wireless Earbuds",
+        "Brand": "Apple",
+        "Model": "AirPods Pro",
+        "Color": "White",
+        "Bus": "262"
+    },
+    "00020": {
+        "Type": "VR Headset",
+        "Brand": "Oculus",
+        "Model": "Quest 2",
+        "Color": "Gray",
+        "Bus": "Expo Line"
+    },
+    "00021": {
+        "Type": "Robot Vacuum",
+        "Brand": "iRobot",
+        "Model": "Roomba i7+",
+        "Color": "Black",
+        "Bus": "49"
+    },
+    "00022": {
+        "Type": "Air Purifier",
+        "Brand": "Dyson",
+        "Model": "Pure Cool TP04",
+        "Color": "White/Silver",
+        "Bus": "Canada Line"
+    },
+    "00023": {
+        "Type": "Smart Thermostat",
+        "Brand": "Nest",
+        "Model": "Learning Thermostat",
+        "Color": "Stainless Steel",
+        "Bus": "Expo Line"
+    },
+    "00024": {
+        "Type": "Electric Scooter",
+        "Brand": "Xiaomi",
+        "Model": "Mi Electric Scooter Pro 2",
+        "Color": "Black",
+        "Bus": "R2"
+    },
+    "00025": {
+        "Type": "Portable Charger",
+        "Brand": "Anker",
+        "Model": "PowerCore 26800",
+        "Color": "Black",
+        "Bus": "R1"
+    }
+}
