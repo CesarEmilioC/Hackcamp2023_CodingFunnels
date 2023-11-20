@@ -1,0 +1,267 @@
+/* Colour Variables */
+
+:root {
+    --dark-green: #10463c;
+    --green-transparent: #10463ccf;
+    --med-green: #47736a;
+    --label: #6eb0a3;
+    --orange: #eec181;
+    --green: #637a5e;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* General Styles */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background: url(../images/map-background.png) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: var(--orange);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px var(--black);
+}
+
+h3 {
+    color: var(--white);
+    font-family: "Roboto Serif", serif;
+    font-weight: 400;
+    margin-top: 0;
+    font-size: clamp(1.15rem, 1.5vw, 1.5rem);
+    text-shadow: 1px 1px 1px var(--black);
+}
+
+img {
+    width: 90%;
+    padding: 1rem;
+}
+
+/* Form Stuff */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    color: var(--orange);
+    padding-bottom: 1rem;
+    text-shadow: 1px 1px 1px var(--black);
+}
+
+label {
+    font-family: "Roboto Serif", serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    width: 100%;
+    display: block;
+    color: var(--label);
+    margin-left: 1rem;
+}
+
+input {
+    width: 80%;
+    border: none;
+    padding: 0.25rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: var(--med-green);
+    border-radius: 0.33rem;
+    margin: 0.15rem 1rem 0.5rem;
+    transition: 0.2s ease;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    background-color: var(--green);
+}
+
+input[type="submit"] {
+    background-color: var(--orange);
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+    padding: 0.25rem 2rem;
+    text-align: center;
+    max-width: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-family: "Roboto", sans-serif;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--white);
+}
+
+.register-account:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+p.error {
+    color: var(--label);
+}
+
+/* Logged In Page(s) */
+
+.logged-in a {
+    display: block;
+    padding: 0.5rem 2rem;
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 0.25rem;
+    background-color: var(--orange);
+    color: var(--dark-green);
+    text-decoration: none;
+    width: min(20rem, 50vw);
+    transition: 0.2s ease-in-out;
+    font-family: "Roboto", sans-serif;
+}
+
+.logged-in a:hover {
+    background-color: var(--white);
+}
+
+.form-container,
+.logged-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--green);
+    background-color: var(--dark-green);
+    border-radius: 1.5rem;
+    margin: 4rem auto;
+    padding: 2rem 0.5rem;
+    max-width: 80%;
+    min-height: 85vh;
+    box-shadow: 2px 2px 1px rgb(97, 95, 95);
+}
+
+.logged-in p {
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Bottom Link */
+
+a.register-account {
+    color: var(--white);
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 2rem 1rem 1rem;
+    font-family: "Roboto Serif", serif;
+    font-size: 0.75rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+a.go-back {
+    background: transparent;
+    font-family: "Roboto Serif", sans-serif;
+    color: var(--white);
+    transition: 0.2s ease-in-out;
+    font-size: 0.8rem;
+    padding: 4rem 1rem 1rem;
+    text-decoration: none;
+}
+
+a.go-back:hover {
+    color: var(--orange);
+    text-decoration: underline;
+    background: transparent;
+}
+
+/* Footer*/
+
+footer {
+    background-color: var(--green-transparent);
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+footer p {
+    font-size: 0.8rem;
+    padding: 2rem;
+    margin: 0 auto;
+    text-shadow: 1px 1px 1px var(--black);
+}
+
+/* Media Queries */
+
+@media (min-width: 37.5em) {
+    img {
+        max-width: 24rem;
+    }
+}
+
+@media (min-width: 50em) {
+    .form-container,
+    .logged-in {
+        width: 60vw;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 40vw;
+        padding: 0.5rem;
+    }
+
+    input[type="submit"] {
+        max-width: 15rem;
+        padding: 0.5rem;
+    }
+}

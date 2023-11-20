@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,400;8..144,900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}" type="text/css" />
 </head>
 
 <body>
@@ -21,26 +21,24 @@
     </header>
 
     <main>
-        <section class="login">
+        <section class="register" id="register">
 
             <div class="form-container">
-
-                <form action="/" method="post" name="login-form">
-                    <fieldset class="login">
-                        <legend>Lost on Board</legend>
+                <img src="static/images/holding-phone.svg" alt="A drawing of a hand holding a phone">
+                <form action="/register" method="post" name="register-form">
+                    <fieldset class="register">
+                        <legend>Register Your Account</legend>
                         <label for="username">Username</label>
                         <input type="text" class="text" name="username" id="username">
                         <label for="password">Password</label>
                         <input type="password" class="text" name="password" id="password">
                     </fieldset>
-                    <input type="submit" class="submit" value="Login">
+                    <p class="error"> {{register_message}} </p>
+                    <input type="submit" class="submit" value="Register">
                 </form>
-                <p>{{ error_message }}</p>
-                <a href="register-account.html" id="register-account" class="register-account">Don't have an account?
-                    Click here!</a>
+                <a href={{ url_for('index_return') }} class="go-back">Back to Login Page</a>
 
             </div>
-
         </section>
 
     </main>

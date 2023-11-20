@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,400;8..144,900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}" type="text/css" />
 </head>
 
 <body>
@@ -21,8 +21,15 @@
     </header>
 
     <main>
-        <section>
-
+        <section class="logged-in" id="logged-in">
+            <h2>Welcome, {{username}}!</h2>
+            <h3>What would you like to do?</h3>
+            <img src="{{ url_for('static', filename='images/smile.svg') }}" alt="A drawing of a phone with a smiley face">
+            <a href={{ url_for('report_lost') }}>Report Lost Item</a>
+            <a href={{ url_for('report_found') }}>Report Found Item</a>
+            <a href="view-reports.html">View Your Reports</a>
+            <a href="view-reports.html">Quick Find</a>
+            <a href={{ url_for('index_return') }} class="go-back">Back to Login Page</a>
         </section>
 
     </main>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost on Board</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,400;8..144,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}" type="text/css" />
+</head>
+
+<body>
+
+    <main>
+        <section class="logged-in" id="logged-in">
+            <img src="static/images/searching.svg" alt="A drawing of a person looking for something">
+            <form action="view-reports.html" method="post" name="report-lost">
+                <fieldset class="report-lost">
+                    <legend>Report a Lost Item</legend>
+                    <label for="type">Type</label>
+                    <input type="text" name="type" id="type">
+                    <label for="brand">Brand</label>
+                    <input type="text" name="brand" id="brand">
+                    <label for="model">Model</label>
+                    <input type="text" name="model" id="model">
+                    <label for="color">Color</label>
+                    <input type="text" name="color" id="color">
+                    <label for="bus">Bus</label>
+                    <input type="text" name="bus" id="bus">
+                </fieldset>
+                <input type="submit" class="submit" value="Report">
+            </form>
+            <a href={{ url_for('user_return') }} class="go-back">Back to My Account</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>This project was created by Cesar, Juan, Kassandra, and Matheus for HackCamp 2023.</p>
+    </footer>
+
+</body>
+
+</html>
